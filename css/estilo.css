@@ -1,0 +1,359 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Sans-Serif;
+}
+
+header {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	top: 0;
+	background-color: #222222a0;
+}
+
+/* Propriedades dos itens da barra */
+.logo {
+	position: absolute;
+	width: 300px;
+	height: auto;
+}
+
+.logo img {
+	width: 41%;
+	margin-left: 10px;
+}
+
+nav {
+	position: absolute;
+	width: 30%;
+	bottom: 0;
+	right: 0;
+}
+
+nav ul li {
+	list-style: none;
+	float: left;
+	margin-left: 5%;
+}
+
+nav ul li a {
+	color: #000000;
+	text-decoration: none;
+	font-family: Verdana;
+	font-size: 27px;
+}
+
+/* itens da barra para mobile */
+@media (max-width: 768px) {
+	header {
+		width: 100%;
+		height: 50px;
+		position: relative;
+		top: 0;
+	}
+
+	/* Propriedades dos itens da barra */
+	.logo {
+		position: absolute;
+		width: 40%;
+		height: auto;
+	}
+
+	.logo img {
+		width: 40%;
+		margin-left: 10px;
+	}
+
+	nav {
+		position: absolute;
+		width: 50%;
+		bottom: 0;
+		right: 0;
+	}
+
+	nav ul li {
+		list-style: none;
+		float: left;
+	}
+
+	nav ul li a {
+		color: #000000;
+		text-decoration: none;
+		font-family: Verdana;
+		font-size: 1em;
+	}
+}
+
+/* Propriedades do section */
+section {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	background-color: #8f2100;
+}
+
+/* Propriedades do slider */
+#roleta-img {
+	width: 100%;
+	height: auto;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+.img-scroll {
+	width: 100%;
+	height: auto;
+	display: none;
+}
+
+.img-scroll img {
+	pointer-events: none;
+}
+
+.link-c {
+	left: 10px;
+}
+
+.link-c2 {
+	right: 10px;
+}
+
+.img-scroll a {
+	position: absolute;
+	text-decoration: none;
+	top: 50%;
+	color: #fff;
+	font-size: 40px;
+}
+
+/** botões do slider e :target **/
+.img-scroll ul {
+	position: absolute;
+	list-style: none;
+	left: 45%;
+	top: 90%;
+	bottom: 10%;
+}
+
+.img-scroll ul li {
+	float: left;
+	font-size: 40px;
+}
+
+.ponto-slider {
+	color: #fff;
+}
+
+.img-scroll:target {
+	display: block;
+}
+
+@media (max-width: 768px) {
+	#roleta-img {
+		width: 100%;
+		height: auto;
+		left: 0;
+		top: 0;
+	}
+	
+	.img-scroll img {
+		width: 100%;
+		pointer-events: none;
+	}
+	
+	.img-scroll ul {
+		position: absolute;
+		list-style: none;
+		left: 40%;
+		top: 82%;
+		bottom: 18%;
+	}
+}
+
+/* Propriedades do Slogan */
+hgroup {
+	position: relative;
+	margin-top: 5%;
+	margin-bottom: 15px;
+	font-family: Arial, Sans-Serif;
+	text-align: center;
+	color: #fff;
+}
+
+@media (max-width: 768px) {
+	hgroup {
+		position: relative;
+		margin-top: 5%;
+		margin-bottom: 15px;
+		font-family: Arial, Sans-Serif;
+		text-align: center;
+		color: #fff;
+	}
+}
+
+/* Propriedades das areas de oferta */
+.container-oferta {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.oferta {
+	position: relative;
+	width: 70%;
+	height: 600px;
+	margin-left: 15%;
+	background-color: #5812ff;
+	text-align: center;
+	box-shadow: 0 2px 5px #000000;
+	border-radius: 12px;
+	margin-bottom: 15px;
+}
+
+.oferta hgroup img {
+	width: 40%;
+	margin-top: 20%;
+}
+
+.oferta hgroup h2 {
+	position: absolute;
+	width: 100%;
+	margin-top: 5%;
+	background-color: #00ccff;
+	color: #000000;
+}
+
+.oferta hgroup h1 {
+	color: #fff;
+	margin-top: 7%;
+}
+
+.oferta figcaption {
+	width: 100%;
+	float: left;
+}
+
+.oferta figcaption img {
+	width: 50px;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+@media (max-width: 768px) {
+	.oferta {
+		position: relative;
+		width: 70%;
+		height: 300px;
+		margin-left: 15%;
+		background-color: #5812ff;
+		text-align: center;
+		box-shadow: 0 2px 5px #000000;
+		border-radius: 12px;
+		margin-bottom: 15px;
+	}
+}
+
+/** sobre.html **/
+.corpo {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.corpo div {
+	width: 100%;
+}
+
+.corpo #logo img {
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	pointer-events: none;
+}
+
+.corpo div p {
+	text-align: justify;
+	color: #fff;
+}
+
+.imgIlus {
+	position: relative;
+	width: 100%;
+}
+
+.imgIlus img {
+	width: 70%;
+	margin-top: 5%;
+	margin-left: 15%;
+	border: 5px solid #10101051;
+}
+
+/** contato.html **/
+.contato {
+	width: 100%;
+	height: 100%;
+	padding-left: 25%;
+}
+
+.contato form {
+	width: 38%;
+	position: relative;
+	float: left;
+	background-color: #fff;
+	padding: 2%;
+	top: 5%;
+	min-height: 400px;
+}
+
+.contato form label {
+	font-weight: bold;
+}
+
+.contato form input {
+	max-width: 100%;
+	width: 99%;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	border: solid #b50909 1px;
+	padding-left: 1%;
+}
+
+.contato form textarea {
+	max-width: 100%;
+	width: 99%;
+	border: solid #b50909 1px;
+	padding-left: 1%;
+	min-height: 100px;
+}
+
+.contato form button {
+	width: 30%;
+	height: auto;
+	cursor: pointer;
+	background-color: #b50909;
+	color: #fff;
+	font-size: 1.5em;
+	padding: 15px 0 15px 0;
+	margin-left: 35%;
+	margin-top: 1%;
+}
+
+@media (max-width: 768px) {
+	.contato {
+		width: 75%;
+		height: 100%;
+	}
+	
+	.contato form {
+		width: 70%;
+		position: absolute;
+		background-color: #fff;
+		padding: 2%;
+		top: 5%;
+		margin-left: -10%;
+	}
+}
