@@ -230,12 +230,12 @@ hgroup {
 	margin-top: 7%;
 }
 
-.oferta figcaption {
+.oferta figure {
 	width: 100%;
 	float: left;
 }
 
-.oferta figcaption img {
+.oferta figure img {
 	width: 50px;
 	margin-right: 5%;
 	margin-left: 5%;
@@ -295,7 +295,6 @@ hgroup {
 .contato {
 	width: 100%;
 	height: 100%;
-	padding-left: 25%;
 }
 
 .contato form {
@@ -305,6 +304,7 @@ hgroup {
 	background-color: #fff;
 	padding: 2%;
 	top: 5%;
+	left: 30%;
 	min-height: 400px;
 }
 
@@ -344,16 +344,16 @@ hgroup {
 
 @media (max-width: 768px) {
 	.contato {
-		width: 75%;
+		width: 100%;
 		height: 100%;
 	}
 	
 	.contato form {
 		width: 70%;
-		position: absolute;
+		position: relative;
 		background-color: #fff;
 		padding: 2%;
 		top: 5%;
-		margin-left: -10%;
+		left: 13%;
 	}
 }
